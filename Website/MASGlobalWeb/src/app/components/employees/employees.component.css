@@ -1,0 +1,34 @@
+.employees{
+    margin: 40px;
+    
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.request-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+}
+
+.label {
+    margin-right: 5px;
+}
+
+.no-employees {
+   text-align: center;
+   font-size: 26px;
+   color: lightslategray; 
+}
+
+@media (max-width: 900px){
+    .employees{
+        margin: 15px;
+    }
+}

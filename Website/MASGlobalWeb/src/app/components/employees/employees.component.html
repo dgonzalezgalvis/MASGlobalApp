@@ -1,0 +1,17 @@
+<div class="employees">
+    <div class="title"><h1>Employees</h1></div>
+    <p>Please enter a Employee Id to search (leave it empty to bring all users): </p>
+    <div class="request-container">
+        <label class="label">Employee ID:</label>
+        <input type="number" [(ngModel)]="employeeId" placeholder="Employee Id">
+        <button (click)="bringEmployees()">Search</button>
+    </div>
+    <div class="employees-container">
+        <ng-table [config]="config" (tableChanged)="onChangeTable(config)" (cellClicked)="onCellClick($event)" 
+            [rows]="employees" [columns]="columns">
+        </ng-table>
+    </div>
+    <div class="no-employees" *ngIf="employees.length === 0">
+        No employees match with search criteria
+    </div>
+</div>
