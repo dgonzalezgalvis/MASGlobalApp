@@ -9,7 +9,7 @@ export const appRoutes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/employees',
+        redirectTo: 'employees',
         pathMatch: 'full'
     },
 ];
